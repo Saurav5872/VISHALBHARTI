@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 40px; */
+}
+
+/* Header */
+.header {
+  background-color: #4e0036;
+  padding: 10px 0;
+  /* height: 40px; */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 19px;
+  /* font-weight: bold; */
+  text-transform: uppercase;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 600px;
+}
+
+.carousel-inner img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption h5 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* .carousel-caption p {
+  font-size: 16px;
+} */
+
+
+.announcement-bar {
+  background-color: #4e0036;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-top: 5px solid #ffcc00;
+}
+
+/* School Name Section */
+.school-name {
+  background-color: #4e0036;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.school-name h1 {
+  margin: 0;
+  font-size: 35px;
+  margin-top: 30px;
+  /* font-weight: bold; */
+}
+.school-name h3{
+  margin-top: 40px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.school-name p{
+  margin-top: 20px;
+  margin-left: 400px;
+  margin-right: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.school-name h4{
+  margin-top: 200px;
+}
+
+.school-name h5{
+  margin: 40px;
+}
+
+/* Chatbot Button */
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#chatbot-btn {
+  background-color: #4e0036;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Chatbot Form */
+.chatbot-form {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  z-index: 1000;
+}
+
+.chatbot-form h3 {
+  margin-top: 0;
+  color: #4e0036;
+}
+
+.chatbot-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.chatbot-form input,
+.chatbot-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chatbot-form button {
+  background-color: #4e0036;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.chatbot-form.hidden {
+  display: none;
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: #4e0036;
+  padding: 10px 20px;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  background-color: #5e1046;
+  border-radius: 4px;
+}
+
+/* General Navbar Styling */
+.navbar {
+  background-color: #4e0036;
+  padding: 10px 20px;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  background-color: #5e1046;
+  border-radius: 4px;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul li a {
+    text-align: center;
+  }
+
+  .carousel img {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #chatbot-btn {
+      width: 45px;
+      height: 45px;
+      font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .school-name h3, .school-name p {
+      margin: 10px;
+      font-size: 16px;
+  }
+  .chatbot-form {
+      padding: 10px;
+  }
+}
+
+
+
+
